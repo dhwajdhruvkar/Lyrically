@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * This file is part of QuickLyric
+  ~  * Copyright © 2017 QuickLyric SPRL
+  ~  *
+  ~  * QuickLyric is free software: you can redistribute it and/or modify
+  ~  * it under the terms of the GNU General Public License as published by
+  ~  * the Free Software Foundation, either version 3 of the License, or
+  ~  * (at your option) any later version.
+  ~  *
+  ~  * QuickLyric is distributed in the hope that it will be useful,
+  ~  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  * You should have received a copy of the GNU General Public License
+  ~  * along with QuickLyric.  If not, see <http://www.gnu.org/licenses/>.
+  ~  */
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.geecko.QuickLyric.view.BubblePopImageView
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="12"
+        android:src="@drawable/intro_1_table"
+        app:icon1="@drawable/google_music"
+        app:icon2="@drawable/spotify"
+        app:icon3="@drawable/shuttle"
+        app:screen="@drawable/intro_1_screen"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textView1_a"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="1.6"
+        android:layout_marginRight="30dp"
+        android:text="@string/apps_desc"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        app:autoSizeMaxTextSize="40sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textView1_c"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:maxWidth="450dp"
+        android:text="Google Play is a trademark of Google Inc.\nSpotify is a trademark of Spotify Ltd."
+        android:textAppearance="?android:attr/textAppearanceSmallInverse"
+        android:textColor="?android:attr/textColorPrimaryInverse"
+        app:autoSizeTextType="uniform"
+        tools:ignore="HardcodedText"/>
+
+</LinearLayout>

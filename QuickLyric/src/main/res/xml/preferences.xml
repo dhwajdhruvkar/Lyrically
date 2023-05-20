@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * This file is part of QuickLyric
+  ~  * Copyright © 2017 QuickLyric SPRL
+  ~  *
+  ~  * QuickLyric is free software: you can redistribute it and/or modify
+  ~  * it under the terms of the GNU General Public License as published by
+  ~  * the Free Software Foundation, either version 3 of the License, or
+  ~  * (at your option) any later version.
+  ~  *
+  ~  * QuickLyric is distributed in the hope that it will be useful,
+  ~  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  * You should have received a copy of the GNU General Public License
+  ~  * along with QuickLyric.  If not, see <http://www.gnu.org/licenses/>.
+  ~  */
+  -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_look_feel_category">
+        <com.geecko.QuickLyric.view.ColorGridPreference
+            android:defaultValue="0"
+            android:entryValues="@array/themes_values"
+            android:key="pref_theme"
+            android:title="@string/pref_theme"/>
+        <com.geecko.QuickLyric.view.NightSwitchPreference
+            android:defaultValue="false"
+            android:key="pref_night_mode"
+            android:summary="@string/pref_night_mode_sum"
+            android:title="@string/pref_night_mode"/>
+        <com.cgollner.unclouded.preferences.SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="pref_overlay"
+            android:summary="@string/pref_lyrics_overlay_sum"
+            android:title="@string/pref_lyrics_overlay_name"/>
+        <com.geecko.QuickLyric.view.AppCompatListPreference
+            android:defaultValue="0"
+            android:entries="@array/overlay_behavior_options"
+            android:entryValues="@array/overlay_behavior_values"
+            android:key="pref_overlay_behavior"
+            android:enabled="false"
+            android:title="@string/pref_overlay_behavior_title"/>
+        <com.cgollner.unclouded.preferences.SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="pref_force_screen_on"
+            android:summary="@string/pref_force_screen_sum"
+            android:title="@string/pref_force_screen_on"/>
+        <com.cgollner.unclouded.preferences.SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="pref_opendyslexic"
+            android:summary="@string/pref_opendyslexic_sum"
+            android:title="@string/pref_opendyslexic"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/download_category">
+        <com.cgollner.unclouded.preferences.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="pref_lrc"
+            android:summary="@string/pref_lrc_sum"
+            android:title="@string/pref_lrc"/>
+        <com.geecko.QuickLyric.view.AppCompatListPreference
+            android:defaultValue="0"
+            android:entries="@array/artwork_download"
+            android:entryValues="@array/artworks_values"
+            android:key="pref_artworks"
+            android:summary="@string/artworks_pref_sum"
+            android:title="@string/artworks_pref_title"/>
+        <com.cgollner.unclouded.preferences.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="pref_auto_save"
+            android:summary="@string/pref_auto_save_sum"
+            android:title="@string/pref_auto_save"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_scrobbling_category">
+        <com.cgollner.unclouded.preferences.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="pref_filter_20min"
+            android:summary="@string/pref_20min_ignore_sum"
+            android:title="@string/pref_20min_ignore"/>
+        <com.geecko.QuickLyric.view.AppCompatListPreference
+            android:defaultValue="0"
+            android:entries="@array/notifications"
+            android:entryValues="@array/notifications_values"
+            android:key="pref_notifications"
+            android:summary="@string/pref_notifications_sum"
+            android:title="@string/pref_notifications"/>
+    </PreferenceCategory>
+</PreferenceScreen>

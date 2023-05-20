@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_menu_search"
+        android:orderInCategory="0"
+        android:title="@string/abc_search_hint"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_vote"
+        android:icon="@drawable/ic_vote"
+        android:orderInCategory="5"
+        android:visible="false"
+        android:title="@string/vote_action"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/save_action"
+        android:icon="@drawable/ic_save"
+        android:orderInCategory="10"
+        android:title="@string/save_action"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/romanize_action"
+        android:orderInCategory="15"
+        android:title="@string/romanize"
+        android:icon="@drawable/ic_menu_romanize"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/resync_action"
+        android:orderInCategory="20"
+        android:title="@string/resync_action"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/convert_action"
+        android:orderInCategory="20"
+        android:title="@string/full_text_action"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/share_action"
+        android:icon="@drawable/ic_menu_share"
+        android:orderInCategory="30"
+        android:title="@string/share"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+</menu>
